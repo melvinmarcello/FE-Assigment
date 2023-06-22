@@ -1,4 +1,4 @@
-const Pagination= ({totaldata, pokeperpage, setPage}) =>{ 
+const Pagination= ({totaldata, pokeperpage, setPage, currentpage}) =>{ 
     let pages = []
     
     const pagesLength = Math.ceil(totaldata/pokeperpage)
@@ -12,7 +12,7 @@ const Pagination= ({totaldata, pokeperpage, setPage}) =>{
             {
     pages.map((page, i) =>{
                 return (
-                <button className="button-pagination btn btn-light" key={i} onClick={() => setPage(page)}>{page}</button>
+                <button className={page == currentpage ? "actives button-pagination btn btn-light" : "button-pagination btn btn-light"} key={i} onClick={() => setPage(page)}>{page}</button>
                 )
             })}
         </div>

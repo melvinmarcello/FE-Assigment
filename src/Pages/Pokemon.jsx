@@ -43,7 +43,7 @@ const Pokemon = () => {
                     </Col>
                     )                                
                 )}
-            <Pagination totaldata={limit} pokeperpage={pokePerPage} setPage={setCurrentPage}/>
+            <Pagination currentpage={currentPage} totaldata={limit} pokeperpage={pokePerPage} setPage={setCurrentPage}/>
             </Row>
         </Container>
         

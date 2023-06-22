@@ -8,8 +8,9 @@ const Collection = () => {
   const [collection, setCollection] = useState([])
 
   const handleRemove = (data) =>{
-    setCollection(collection.filter((poke) => poke.id != data.id))
-    localStorage.setItem('collection', JSON.stringify(collection))
+    const newData = collection.filter((poke) => poke.id != data.id)
+    setCollection(newData)
+    localStorage.setItem('collection', JSON.stringify(newData))
     if(collection.length === 1) localStorage.clear()
   }
 

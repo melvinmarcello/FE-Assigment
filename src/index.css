@@ -3,6 +3,7 @@ a{
 }
 
 
+
 .imgCard{
     height: 300px;
     width: 200px;
@@ -33,4 +34,8 @@ a{
     padding: 1rem 2rem;
     align-self: center;
     margin-right: 20px;
+}
+
+button.actives{
+    background-color: wheat;
 }
