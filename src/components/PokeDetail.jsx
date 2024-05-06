@@ -33,7 +33,7 @@ const PokeDetail = ({pokemon}) => {
                 <div className="row gx-5 align-items-center">
                 <aside className="col-lg-6">
                     <div className="rounded-4 mb-3 d-flex justify-content-center">                    
-                        <img alt=''className="rounded-4 fit detailImage" src={`../src/assets/${pokemon?.id}.png`} />                
+                        <img alt=''className="rounded-4 fit detailImage" src={`../assets/${pokemon?.id}.png`} />                
                     </div>            
                 </aside>
                 <main className="col-lg-6">

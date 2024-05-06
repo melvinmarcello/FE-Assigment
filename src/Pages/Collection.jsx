@@ -27,7 +27,7 @@ const Collection = () => {
                 {collection.map((data) => (
                   <Col key={data.id} xl="8"  className="image-colletion">
                     <div className="collection-wrapper">
-                      <img className="postingan-image fluid" src={`./src/assets/${data.id}.png`} alt="" />
+                      <img className="postingan-image fluid" src={`./assets/${data.id}.png`} alt="" />
                       <h3 className='text-capitalize'>{data.name}</h3>
                       <Button onClick={() => handleRemove(data)} className='remove-button ms-auto'>Remove</Button>
                     </div>  
