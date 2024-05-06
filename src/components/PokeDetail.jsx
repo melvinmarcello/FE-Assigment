@@ -96,7 +96,7 @@ const PokeDetail = ({pokemon}) => {
                     </div>
 
                     <button disabled={catched} className="btn btn-primary shadow-0 me-3 mt-4" onClick={() => handleCatchPokemon(pokemon)}> Catch Pokemon </button>                    
-                    </div>                    
+                    </div>               
                     {catched ? <h4>Congratuluations pokemon catched and added to your collection</h4> : message}
                 </main>
                 </div>
