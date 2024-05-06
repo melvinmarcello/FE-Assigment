@@ -33,7 +33,7 @@ const Pokemon = () => {
                 {dataPage.map((data, i) => (
                     <Col xl={3} md={4} sm={6} key={i} className="mb-3">
                         <Card>
-                            <Card.Img variant="top" src={`./public/assets/${data.url.split('/')[6]}.png`} className="imgCard" />
+                            <Card.Img variant="top" src={`./assets/${data.url.split('/')[6]}.png`} className="imgCard" />
                             <Card.Body>
                                 <Card.Title className="text-capitalize">
                                     <Link to={`/detail/${data.url.split('/')[6]}`}>{data.name}</Link>
